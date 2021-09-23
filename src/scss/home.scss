@@ -1,0 +1,136 @@
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+:root {
+    --dark-bg: rgba(15, 15, 15, 0.95);
+    --spacing: 350px;
+
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    color: white;
+    z-index: 99;
+    position: absolute;
+    margin: 0px auto;
+    padding: 120px 0px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+h1,
+h2,
+h3,
+blockquote {
+    font-family: elevon, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header {
+    text-align: center;
+    /*    background: var(--dark-bg); */
+    grid-column: 2 / span 5;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: var(--spacing);
+}
+
+.whoami {
+    background-image: url('../images/content/rainbow-vortex.svg');
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 1rem;
+    border-radius: 1em;
+    outline: 4px solid #ffffff;
+    outline-offset: 6px;
+}
+.whoami__title {
+    width: 25%;
+    margin: 0 auto;
+}
+.whoami__text {
+    font-family: "ProximaNova-Regular";
+    padding: 0.5em;
+    line-height: 1.6em;
+}
+
+section {
+    grid-column: 2 / 8;
+    //padding: 1rem;
+    font-size: 1.25rem;
+    //line-height: 1.5;
+    margin-bottom: var(--spacing);
+}
+
+.light__title {
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 1.5em;
+}
+.light__list {
+    font-family: "ProximaNova-Regular";
+    line-height: 1.6em;
+}
+.light__list__element > h3,
+span {
+    width: 50%;
+}
+.light__list__element > p {
+    width: 90%;
+}
+.light__list__element__link {
+    margin: 0 auto;
+    width: 25%;
+}
+.light__list__element__link >a {
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    padding: 0.6em;
+    display: inline-block;
+    outline: 1px solid #ffffff;
+    border-radius: 0.8em;
+}
+.second{
+    width: 30%;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left > p{
+    font-family: "ProximaNova-Regular";
+    padding: 0 .6em .5em .6em;
+    line-height: 1.6em;
+    width: 90%;
+}
+.left,
+.light {
+    grid-column: 6 / 12;
+    background-image: url("../images/content/rainbow-vortex.svg");
+    background-repeat: repeat;
+    background-size: cover;
+    //padding: 1rem;
+    border-radius: 1em;
+    outline: 4px solid #ffffff;
+    outline-offset: 6px;
+}
+
+.thanks:after {
+    display: none;
+}
