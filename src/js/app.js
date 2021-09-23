@@ -186,6 +186,7 @@ animate();
 
 // AOS
 
+
 AOS.init({
   easing: 'ease-in-sine',
   delay: 50,
